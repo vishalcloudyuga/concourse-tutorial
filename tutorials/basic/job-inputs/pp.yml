@@ -15,7 +15,7 @@ jobs:
   public: true
   plan:
   - get: resource-tutorial
-  - get: resource-app
+  - get: resource-app1
     trigger: true
   - task: web-app-tests
     file: resource-tutorial/tutorials/basic/job-inputs/rsvp.yml

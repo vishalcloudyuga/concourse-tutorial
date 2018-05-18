@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: cloudyuga/docker-jenkins-python-slave}
+
+inputs:
+- name: resource-tutorial
+- name: resource-app
+  path: ./rsvpapp
+
+run:
+  path: resource-tutorial/tutorials/basic/job-inputs/rsvp.sh
